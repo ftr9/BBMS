@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>new campaign</title>
+  </head>
+  <body>
+    <header class="headerMain__login">
+      <div class="headerMain__content">
+        <h3>BLOOD DONOR MANAGEMENT SYSTEM..</h3>
+        <div class="headerMain__logout">
+          <div class="headerMain__logout--content">
+            <ion-icon name="person"></ion-icon>
+            <ion-icon name="caret-down"></ion-icon>
+          </div>
+          <a href="adminLogin.html" class="form__logoutButton form__logoutButton__hidden">
+            <ion-icon name="log-in"></ion-icon><span>Logout</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="main__content">
+      <div class="main__content__nav">
+        <ul>
+          <li>
+            <a href="../adminDashbord.html"
+              ><ion-icon name="clipboard"></ion-icon><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a class="nav__drop" href="#"
+              ><ion-icon name="book"></ion-icon
+              ><span>Blood collection Details</span>
+              <ion-icon
+                class="main__content__nav--left"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <div class="main__content__nav--hidden">
+            <ul>
+              <li><a href="../bloodcollection/AddBlood.html">Add Blood</a></li>
+              <li>
+                <a href="../bloodcollection/ViewBlood.html">View Blood</a>
+              </li>
+              <li>
+                <a href="../bloodcollection/EditBlood.html">Edit Blood</a>
+              </li>
+              <li>
+                <a href="../bloodcollection/RemoveBlood.html">Remove Blood</a>
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a href="../addDonor.html"
+              ><ion-icon name="receipt"></ion-icon><span>Add donor</span></a
+            >
+          </li>
+          <li>
+            <a href="../viewDonorDetails.html"
+              ><ion-icon name="eye"></ion-icon
+              ><span>View Donor Details</span></a
+            >
+          </li>
+          <li>
+            <a href="../editDonorDetails.html"
+              ><ion-icon name="git-pull-request"></ion-icon
+              ><span>Edit Donor Details</span></a
+            >
+          </li>
+          <li>
+            <a href="../deleteDonorDetails.html"
+              ><ion-icon name="trash"></ion-icon
+              ><span>Delete Donor Details</span></a
+            >
+          </li>
+          <li>
+            <a class="nav__drop" href="#"
+              ><ion-icon name="volume-high"></ion-icon><span>Announcement</span>
+              <ion-icon
+                class="main__content__nav--left"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <div class="main__content__nav--hidden">
+            <ul>
+              <li>
+                <a href="../announcement/makeAnnouncement.html"
+                  >Make Announcement</a
+                >
+              </li>
+              <li>
+                <a href="../announcement/viewAnnouncement.html"
+                  >View Announcement</a
+                >
+              </li>
+              <li>
+                <a href="../announcement/EditAnnouncement.html"
+                  >Edit Announcement</a
+                >
+              </li>
+              <li>
+                <a href="../announcement/removeAnnouncement.html"
+                  >Remove Announcement</a
+                >
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a class="nav__drop" href="#"
+              ><ion-icon name="flame"></ion-icon><span>Campaings</span>
+              <ion-icon
+                class="main__content__nav--left"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <div class="main__content__nav--hidden">
+            <ul>
+              <li><a href="./newCampaign.html">New Campaign</a></li>
+              <li><a href="./viewCampaign.html">View Campaign</a></li>
+              <li>
+                <a href="./updateCampaign.html">Update Campaign</a>
+              </li>
+              <li>
+                <a href="./deleteCampaign.html">Delete Campaign</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+      <div class="main__content__left">
+        <h2>Start New Campaign</h2>
+        <form class="form__left">
+        
+            <p>Please fill up the form below:</p>
+            <div class="form__content">
+                <label for="campaignName">Campaign Name</label>
+            <input id="campaignName" name="campaignName" type="text" placeholder="Enter Campaign's Name"></input>
+
+              <label for="organizerName">Organizer Name</label>
+            <input id="organizerName" name="organizerName" type="text" placeholder="Enter Organizer's Name"></input>
+
+            <label for="contactNumber">Contact Number</label>
+            <input id="contactNumber name="contactNumber" type="number" placeholder="9876543210"></input>
+
+            <label for="campaignDate" >Campaign Date</label>
+            <input id="campaignDate" name="campaignDate" type="date"></input>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description"></textarea>
+
+            <button type="submit">Post</button>
+            </div>
+            
+        </form>
+      </div>
+      
+    </section>
+    <script src="../main.js"></script>
+  </body>
+</html>

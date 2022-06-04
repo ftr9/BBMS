@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Admin dashboard</title>
+  </head>
+  <body>
+    <header class="headerMain__login">
+      <div class="headerMain__content">
+        <h3>BLOOD DONOR MANAGEMENT SYSTEM..</h3>
+        <div class="headerMain__logout">
+          <div class="headerMain__logout--content">
+            <ion-icon name="person"></ion-icon>
+            <ion-icon name="caret-down"></ion-icon>
+          </div>
+          <a
+            href="adminLogin.html"
+            class="form__logoutButton form__logoutButton__hidden"
+          >
+            <ion-icon name="log-in"></ion-icon><span>Logout</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="main__content">
+      <!--NAVBAR STARTS-->
+      <div class="main__content__nav">
+        <ul>
+          <li>
+            <a href="admin"
+              ><ion-icon name="clipboard"></ion-icon><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a class="nav__drop" href="#"
+              ><ion-icon name="book"></ion-icon
+              ><span>Blood collection Details</span>
+              <ion-icon
+                class="main__content__nav--left"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <div class="main__content__nav--hidden">
+            <ul>
+              <li><a href="./bloodcollection/AddBlood.html">Add Blood</a></li>
+              <li><a href="./bloodcollection/ViewBlood.html">View Blood</a></li>
+              <li><a href="./bloodcollection/EditBlood.html">Edit Blood</a></li>
+              <li>
+                <a href="./bloodcollection/RemoveBlood.html">Remove Blood</a>
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a href="./addDonor.html"
+              ><ion-icon name="receipt"></ion-icon><span>Add donor</span></a
+            >
+          </li>
+          <li>
+            <a href="./viewDonorDetails.html"
+              ><ion-icon name="eye"></ion-icon
+              ><span>View Donor Details</span></a
+            >
+          </li>
+          <li>
+            <a href="./editDonorDetails.html"
+              ><ion-icon name="git-pull-request"></ion-icon
+              ><span>Edit Donor Details</span></a
+            >
+          </li>
+          <li>
+            <a href="./deleteDonorDetails.html"
+              ><ion-icon name="trash"></ion-icon
+              ><span>Delete Donor Details</span></a
+            >
+          </li>
+          <li>
+            <a class="nav__drop" href="#"
+              ><ion-icon name="volume-high"></ion-icon><span>Announcement</span>
+              <ion-icon
+                class="main__content__nav--left"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <div class="main__content__nav--hidden">
+            <ul>
+              <li>
+                <a href="./announcement/makeAnnouncement.html"
+                  >Make Announcement</a
+                >
+              </li>
+              <li>
+                <a href="./announcement/viewAnnouncement.html"
+                  >View Announcement</a
+                >
+              </li>
+              <li>
+                <a href="./announcement/EditAnnouncement.html"
+                  >Edit Announcement</a
+                >
+              </li>
+              <li>
+                <a href="./announcement/removeAnnouncement.html"
+                  >Remove Announcement</a
+                >
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a class="nav__drop" href="#"
+              ><ion-icon name="flame"></ion-icon><span>Campaings</span>
+              <ion-icon
+                class="main__content__nav--left"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <div class="main__content__nav--hidden">
+            <ul>
+              <li><a href="./campaings/newCampaign.html">New Campaign</a></li>
+              <li><a href="./campaings/viewCampaign.html">View Campaign</a></li>
+              <li>
+                <a href="./campaings/updateCampaign.html">Update Campaign</a>
+              </li>
+              <li>
+                <a href="./campaings/deleteCampaign.html">Delete Campaign</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+      <!--NAV BAR ENDS-->
+      <!--LEFT SIDE STARTS-->
+      <div class="main__content__left">
+        <h2>Admin Dashboard</h2>
+        <div class="main__content__value__cards">
+          <!--This is card 1-->
+          <div class="dashboard__card">
+            <div class="dashboard__card__content">
+              <div class="dashboard__card__content--left">
+                <ion-icon name="people"></ion-icon>
+              </div>
+              <div class="dashboard__card__content--right">
+                <div class="dashboard__card__text1">6</div>
+                <div class="dashboard__card__text2">Total Donors</div>
+              </div>
+            </div>
+            <a href="./viewDonorDetails.html" class="dashboard__card__button">
+              <span>View Details</span>
+              <ion-icon name="arrow-forward-circle"></ion-icon>
+            </a>
+          </div>
+          <!--Card ends here-->
+          <!--This is card 2-->
+          <div class="dashboard__card">
+            <div class="dashboard__card__content">
+              <div class="dashboard__card__content--left">
+                <ion-icon name="medkit"></ion-icon>
+              </div>
+              <div class="dashboard__card__content--right">
+                <div class="dashboard__card__text1">11</div>
+                <div class="dashboard__card__text2">Available Blood</div>
+              </div>
+            </div>
+            <a
+              href="./bloodcollection/ViewBlood.html"
+              class="dashboard__card__button"
+            >
+              <span>View Details</span>
+              <ion-icon name="arrow-forward-circle"></ion-icon>
+            </a>
+          </div>
+          <!--Card 2 ends here-->
+          <!--This is card 3-->
+          <div class="dashboard__card">
+            <div class="dashboard__card__content">
+              <div class="dashboard__card__content--left">
+                <ion-icon name="volume-medium"></ion-icon>
+              </div>
+              <div class="dashboard__card__content--right">
+                <div class="dashboard__card__text1">2</div>
+                <div class="dashboard__card__text2">Announcement</div>
+              </div>
+            </div>
+            <a
+              href="./announcement/viewAnnouncement.html"
+              class="dashboard__card__button"
+            >
+              <span>View Details</span>
+              <ion-icon name="arrow-forward-circle"></ion-icon>
+            </a>
+          </div>
+          <!--Card 3 ends here-->
+          <!--This is card 4-->
+          <div class="dashboard__card">
+            <div class="dashboard__card__content">
+              <div class="dashboard__card__content--left">
+                <ion-icon name="water"></ion-icon>
+              </div>
+              <div class="dashboard__card__content--right">
+                <div class="dashboard__card__text1">Donate</div>
+                <div class="dashboard__card__text2">Blood</div>
+              </div>
+            </div>
+            <a
+              href="./bloodcollection/AddBlood.html"
+              class="dashboard__card__button"
+            >
+              <span>View Details</span>
+              <ion-icon name="arrow-forward-circle"></ion-icon>
+            </a>
+          </div>
+          <!--Card 4 ends here-->
+        </div>
+        <div class="chartsection">
+          <h4>Total Available Blood According to Blood Groups</h4>
+          <canvas id="bloodChart"></canvas>
+        </div>
+      </div>
+      <!--LEFT SIDE ENDS-->
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./main.js"></script>
+    <script>
+      const ctx = document.getElementById('bloodChart')
+      const myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['AB+ ', 'AB- ', 'B+ ', 'B- ', 'O+ ', 'O- '],
+          datasets: [
+            {
+              label: 'Total Available Bloodcaccording to BloodcGroups',
+              data: [18.2, 18.2, 9.1, 27.3, 9.1, 18.2],
+              backgroundColor: [
+                '#c2255c',
+                '#9c36b5',
+                '#6741d9',
+                '#3b5bdb',
+                '#1971c2',
+                '#0c8599',
+              ],
+            },
+          ],
+        },
+      })
+    </script>
+  </body>
+</html>

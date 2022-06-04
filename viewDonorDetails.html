@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Donor Details</title>
+  </head>
+  <body>
+    <header class="headerMain__login">
+      <div class="headerMain__content">
+        <h3>BLOOD DONOR MANAGEMENT SYSTEM..</h3>
+        <div class="headerMain__logout">
+          <div class="headerMain__logout--content">
+            <ion-icon name="person"></ion-icon>
+            <ion-icon name="caret-down"></ion-icon>
+          </div>
+          <a
+            href="adminLogin.html"
+            class="form__logoutButton form__logoutButton__hidden"
+          >
+            <ion-icon name="log-in"></ion-icon><span>Logout</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="main__content">
+      <div class="main__content__nav">
+        <ul>
+          <li>
+            <a href="admin"
+              ><ion-icon name="clipboard"></ion-icon><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a class="nav__drop" href="#"
+              ><ion-icon name="book"></ion-icon
+              ><span>Blood collection Details</span>
+              <ion-icon
+                class="main__content__nav--left"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <div class="main__content__nav--hidden">
+            <ul>
+              <li><a href="./bloodcollection/AddBlood.html">Add Blood</a></li>
+              <li><a href="./bloodcollection/ViewBlood.html">View Blood</a></li>
+              <li><a href="./bloodcollection/EditBlood.html">Edit Blood</a></li>
+              <li>
+                <a href="./bloodcollection/RemoveBlood.html">Remove Blood</a>
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a href="./addDonor.html"
+              ><ion-icon name="receipt"></ion-icon><span>Add donor</span></a
+            >
+          </li>
+          <li>
+            <a href="./viewDonorDetails.html"
+              ><ion-icon name="eye"></ion-icon
+              ><span>View Donor Details</span></a
+            >
+          </li>
+          <li>
+            <a href="./editDonorDetails.html"
+              ><ion-icon name="git-pull-request"></ion-icon
+              ><span>Edit Donor Details</span></a
+            >
+          </li>
+          <li>
+            <a href="./deleteDonorDetails.html"
+              ><ion-icon name="trash"></ion-icon
+              ><span>Delete Donor Details</span></a
+            >
+          </li>
+          <li>
+            <a class="nav__drop" href="#"
+              ><ion-icon name="volume-high"></ion-icon><span>Announcement</span>
+              <ion-icon
+                class="main__content__nav--left"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <div class="main__content__nav--hidden">
+            <ul>
+              <li>
+                <a href="./announcement/makeAnnouncement.html"
+                  >Make Announcement</a
+                >
+              </li>
+              <li>
+                <a href="./announcement/viewAnnouncement.html"
+                  >View Announcement</a
+                >
+              </li>
+              <li>
+                <a href="./announcement/EditAnnouncement.html"
+                  >Edit Announcement</a
+                >
+              </li>
+              <li>
+                <a href="./announcement/removeAnnouncement.html"
+                  >Remove Announcement</a
+                >
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a class="nav__drop" href="#"
+              ><ion-icon name="flame"></ion-icon><span>Campaings</span>
+              <ion-icon
+                class="main__content__nav--left"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <div class="main__content__nav--hidden">
+            <ul>
+              <li><a href="./campaings/newCampaign.html">New Campaign</a></li>
+              <li><a href="./campaings/viewCampaign.html">View Campaign</a></li>
+              <li>
+                <a href="./campaings/updateCampaign.html">Update Campaign</a>
+              </li>
+              <li>
+                <a href="./campaings/deleteCampaign.html">Delete Campaign</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+      <div class="main__content__left">
+        <h2>Donors Detail</h2>
+        <div class="main__content__details">
+          <p>Total Records of available donors</p>
+          <div class="main__content__details__list">
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Guardian's Name</th>
+                <th>Gender</th>
+                <th>D.O.B</th>
+                <th>Weight</th>
+                <th>Blood Group</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Contact</th>
+              </tr>
+              <tr>
+                <td>demo user</td>
+                <td>demo</td>
+                <td>demo gaurdian</td>
+                <td>M</td>
+                <td>2020-90-03</td>
+                <td>51</td>
+                <td>b+</td>
+                <td>demo@demo.com</td>
+                <td>demo</td>
+                <td>9823456789</td>
+              </tr>
+              <tr>
+                <td>demo user</td>
+                <td>demo</td>
+                <td>demo gaurdian</td>
+                <td>F</td>
+                <td>2020-90-03</td>
+                <td>51</td>
+                <td>b+</td>
+                <td>demo@demo.com</td>
+                <td>demo</td>
+                <td>9823456789</td>
+              </tr>
+              <tr>
+                <td>demo user</td>
+                <td>demo</td>
+                <td>demo gaurdian</td>
+                <td>F</td>
+                <td>2020-90-03</td>
+                <td>51</td>
+                <td>b+</td>
+                <td>demo@demo.com</td>
+                <td>demo</td>
+                <td>9823456789</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="../main.js"></script>
+</html>
